@@ -52,8 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class CI_Router {
 	// Property declarations for PHP 8.2 compatibility
 	public $uri;
-	public $directory;
-	public $default_controller;
 
 
 	/**
