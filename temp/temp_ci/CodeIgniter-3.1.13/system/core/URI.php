@@ -50,9 +50,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @link		https://codeigniter.com/userguide3/libraries/uri.html
  */
 class CI_URI {
-	// Property declarations for PHP 8.2 compatibility
-	public $config;
-
 
 	/**
 	 * List of cached URI segments

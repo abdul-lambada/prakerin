@@ -5,14 +5,14 @@ class Web extends CI_Controller {
 
 	public function index()
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
 		// if(!isset($ceks)) {
 			// redirect('web/login');
 		// }else{
 		// 			redirect('users');
 		// }
 
-		$data['judul_web'] = "Selamat datang di APlikasi SIPKISMK";
+		$data['judul_web'] = "Selamat datang di PRAKERIN SMK";
 
 		$this->load->view('web/header', $data);
 		$this->load->view('web/beranda');
@@ -93,7 +93,7 @@ class Web extends CI_Controller {
 
 	public function login()
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
 		if(isset($ceks)) {
 			redirect('users');
 		}else{
@@ -170,9 +170,9 @@ class Web extends CI_Controller {
 												 $level    = "siswa";
 											 }
 
-																$this->session->set_userdata('prakrin_smk@Proyek-2017', "$cekun");
-																$this->session->set_userdata('id_user@Proyek-2017', "$id_user");
-																$this->session->set_userdata('level@Proyek-2017', "$level");
+																$this->session->set_userdata('prakerin_smk', "$cekun");
+																$this->session->set_userdata('id_user@prakerin_smk', "$id_user");
+																$this->session->set_userdata('level@prakerin_smk', "$level");
 
 																redirect('users');
 										 }
@@ -183,7 +183,7 @@ class Web extends CI_Controller {
 
 
 	public function logout() {
-     if ($this->session->has_userdata('prakrin_smk@Proyek-2017') and $this->session->has_userdata('id_user@Proyek-2017') and $this->session->has_userdata('level@Proyek-2017')) {
+     if ($this->session->has_userdata('prakerin_smk') and $this->session->has_userdata('id_user@prakerin_smk') and $this->session->has_userdata('level@prakerin_smk')) {
          $this->session->sess_destroy();
          redirect('');
      }

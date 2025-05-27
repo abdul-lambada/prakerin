@@ -1,6 +1,6 @@
 <?php
-$ceks  = $this->session->userdata('prakrin_smk@Proyek-2017');
-$level = $this->session->userdata('level@Proyek-2017');
+$ceks  = $this->session->userdata('prakerin_smk');
+$level = $this->session->userdata('level@prakerin_smk');
 
 if ($level == 'admin') {
 	$cek    = $this->db->get_where('tbl_user', "username='$ceks'")->row();

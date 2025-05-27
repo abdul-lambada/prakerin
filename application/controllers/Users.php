@@ -11,9 +11,9 @@ class Users extends CI_Controller {
 
 	public function index()
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -50,9 +50,9 @@ class Users extends CI_Controller {
 
 	public function profile()
 	{
-		$ceks    = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$level   = $this->session->userdata('level@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
+		$ceks    = $this->session->userdata('prakerin_smk');
+		$level   = $this->session->userdata('level@prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -203,19 +203,19 @@ class Users extends CI_Controller {
 						}
 
 
-							$this->session->has_userdata('prakrin_smk@Proyek-2017');
-							$this->session->set_userdata('prakrin_smk@Proyek-2017', "$username");
+							$this->session->has_userdata('prakerin_smk');
+							$this->session->set_userdata('prakerin_smk', "$username");
 
 							if ($level == 'pembimbing') {
 									$id_user = $nip;
 							}elseif ($level == 'siswa') {
 									$id_user = $username;
 							}
-							$this->session->has_userdata('id_user@Proyek-2017');
-							$this->session->set_userdata('id_user@Proyek-2017', "$id_user");
+							$this->session->has_userdata('id_user@prakerin_smk');
+							$this->session->set_userdata('id_user@prakerin_smk', "$id_user");
 
-							$this->session->has_userdata('level@Proyek-2017');
-							$this->session->set_userdata('level@Proyek-2017', "$level");
+							$this->session->has_userdata('level@prakerin_smk');
+							$this->session->set_userdata('level@prakerin_smk', "$level");
 
 									$this->session->set_flashdata('msg',
 										'
@@ -364,9 +364,9 @@ class Users extends CI_Controller {
 
 	public function info($aksi='',$id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -630,9 +630,9 @@ class Users extends CI_Controller {
 
 	public function j_k($aksi='', $id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -813,9 +813,9 @@ class Users extends CI_Controller {
 
 	public function pengguna($aksi='', $id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -1073,9 +1073,9 @@ class Users extends CI_Controller {
 
 	public function industri($aksi='', $id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -1293,9 +1293,9 @@ class Users extends CI_Controller {
 
 	public function penempatan($aksi='', $id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -1428,9 +1428,9 @@ class Users extends CI_Controller {
 
 	public function nilai_praktik($aksi='', $id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -1471,9 +1471,9 @@ class Users extends CI_Controller {
 //------------------- Pembimbing --------------------//
 	public function d_siswa($aksi='', $id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -1511,9 +1511,9 @@ class Users extends CI_Controller {
 
 	public function bimbingan($aksi='', $id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -1653,9 +1653,9 @@ class Users extends CI_Controller {
 
 	public function nilai($aksi='', $id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -1757,9 +1757,9 @@ class Users extends CI_Controller {
 //---------------------------- Siswa ----------------------------//
 	public function status_prakerin($aksi='', $id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -1870,9 +1870,9 @@ class Users extends CI_Controller {
 
 	public function bimbingan_siswa($aksi='', $id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -1911,9 +1911,9 @@ class Users extends CI_Controller {
 
 	public function nilai_prakerin($aksi='', $id='')
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{
@@ -1956,9 +1956,9 @@ class Users extends CI_Controller {
 
 	public function monitoring()
 	{
-		$ceks = $this->session->userdata('prakrin_smk@Proyek-2017');
-		$id_user = $this->session->userdata('id_user@Proyek-2017');
-		$level = $this->session->userdata('level@Proyek-2017');
+		$ceks = $this->session->userdata('prakerin_smk');
+		$id_user = $this->session->userdata('id_user@prakerin_smk');
+		$level = $this->session->userdata('level@prakerin_smk');
 		if(!isset($ceks)) {
 			redirect('web/login');
 		}else{

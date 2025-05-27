@@ -50,11 +50,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @link		https://codeigniter.com/userguide3/general/routing.html
  */
 class CI_Router {
-	// Property declarations for PHP 8.2 compatibility
-	public $uri;
-	public $directory;
-	public $default_controller;
-
 
 	/**
 	 * CI_Config class object

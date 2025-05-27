@@ -1,5 +1,5 @@
 <?php
-$ceks = $this->session->userdata('prakrin_smk@Proyek-2017'); ?>
+$ceks = $this->session->userdata('prakerin_smk'); ?>
 <!-- Page content of course! -->
 <main class="bs-docs-masthead" id="content" role="main" style="margin-left:-20px;margin-right:-20px;margin-top:-60px;">
  <div class="container">
@@ -22,8 +22,6 @@ $ceks = $this->session->userdata('prakrin_smk@Proyek-2017'); ?>
 		<?php
 		 } ?>
 	 </p>
-	 <br><center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
-	 
 	 <!-- <?php
 	 if (!$ceks) {?>
 	 <p class="version">v1.0</p>
